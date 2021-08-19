@@ -6,7 +6,6 @@ import plotly.express as px
 
 import pandas as pd
 from datetime import date
-print("asdfg")
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
@@ -14,7 +13,9 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 
 # DATA
+#df = pd.read_parquet('s3://mc1-m14-capstone-data/social_network.parquet')
 df = pd.read_parquet('/tmp/social_network.parquet')
+
 
 # LAYOUT
 app.layout = html.Div([
