@@ -15,7 +15,7 @@ server = app.server
 # DATA
 #df = pd.read_parquet('s3://mc1-m14-capstone-data/social_network.parquet')
 df = pd.read_parquet('/tmp/social_network.parquet')
-
+# comment trying
 
 # LAYOUT
 app.layout = html.Div([
